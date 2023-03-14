@@ -3,4 +3,4 @@
 - Projeto da Faculdade 
 
 ## 🔗 Link da Página:
-- https://rebsoli.github.io/cardapio/
+- https://oliveirasarah.github.io/cardapio/
