@@ -1,0 +1,222 @@
+// Variables
+$light: #fcfcfc;
+$accent: #ef6069;
+$dark: #574141;
+$font-title: "Agbalumo", system-ui;
+$font-sans: "Inter", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-sans;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #f7f7f7,
+    #f5f5f5,
+    #f2f2f2,
+    #f0f0f0,
+    #eeeeee
+  );
+  color: $dark;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: $accent;
+  color: $light;
+  padding: 1.5rem;
+  border-bottom: 3px $light solid;
+  margin-bottom: 2rem;
+
+  .icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+
+    color: $light;
+    font-weight: 500;
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: $font-title;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    justify-items: center;
+    color: $light;
+  }
+
+  &__img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.opening-hours {
+  text-transform: uppercase;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: $accent;
+  text-align: center;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.menu {
+  width: 100%;
+
+  &__section {
+    margin-bottom: 2rem;
+  }
+
+  &__section-title {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    color: $light;
+    background-color: $accent;
+    border-bottom: darken($accent, 30%) 2px solid;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-name,
+  &__item-price {
+    font-size: 1.2rem;
+  }
+
+  &__item-name {
+    font-weight: 500;
+  }
+}
+
+.burguer-images {
+  display: grid;
+  gap: 1rem;
+}
+
+.burguer-img {
+  border-radius: 10px;
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-items: center;
+}
+
+a {
+  color: $light;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: #ddd;
+  }
+}
+
+.fa-brands {
+  font-size: 2rem;
+}
+
+.fa-solid {
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: $accent;
+  color: $light;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.darker {
+  color: darken($accent, 5%);
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: hsl(0, 0%, 89%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $accent;
+}
+
+@media screen and (min-width: 640px) {
+  .logo__title {
+    font-size: 1.8rem;
+  }
+  .main-content {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .main-content {
+    padding: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .burguer-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

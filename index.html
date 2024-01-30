@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarah Burguer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Archivo+Narrow:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/a14430386d.js"
       crossorigin="anonymous"
@@ -14,101 +20,143 @@
   </head>
   <body>
     <header>
-      <div class="logo-container">
-        <img class="logo" src="img/logo.png" alt="" />
-        <h1>Sarah Burguer Artesanais</h1>
+      <div class="logo">
+        <img class="logo__img" src="img/logo.png" alt="" />
+        <h1 class="logo__title">Sarah Burguer Artesanais</h1>
       </div>
-      <ul class="icons">
-        <li>
-          <i class="fa-solid fa-location-dot"></i>
-          Rua Duque de Caixias, 80
-        </li>
-        <li>
-          <i class="fa-brands fa-whatsapp"></i>
-          (14) 90000-0000
-        </li>
-      </ul>
+      <div class="icons">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Rua Duque de Caxias, 80</p>
+      </div>
     </header>
     <main>
-      <h1 class="info">Todos os dias das 18h às 23h</h1>
-      <h2 id="situacao"></h2>
+      <h1 class="opening-hours">
+        Todos os dias das <span class="darker">18h às 23h</span>
+      </h1>
 
-      <div class="grid-container">
-        <div class="grid-children">
-          <h1 class="page-title">Simples</h1>
-          <div class="burguers">
-            <p class="burguer-nome">X-Burguer</p>
-            <p class="preco">R$10,00</p>
-            <p class="burguer-nome">X-Salada</p>
-            <p class="preco">R$13,00</p>
-            <p class="burguer-nome">X-Egg</p>
-            <p class="preco">R$14,00</p>
-            <p class="burguer-nome">X-Bacon</p>
-            <p class="preco">R$15,00</p>
-            <p class="burguer-nome">Frango</p>
-            <p class="preco">R$11,00</p>
-            <p class="burguer-nome">Picanha</p>
-            <p class="preco">R$20,00</p>
-          </div>
+      <div class="main-content">
+        <section class="menu">
+          <section class="menu__section">
+            <h1 class="menu__section-title">Simples</h1>
+            <div class="menu__items">
+              <div class="menu__item">
+                <p class="menu__item-name">X-Burguer</p>
+                <p class="menu__item-price">R$ 10,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">X-Salada</p>
+                <p class="menu__item-price">R$ 13,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">X-Egg</p>
+                <p class="menu__item-price">R$ 14,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">X-Bacon</p>
+                <p class="menu__item-price">R$ 15,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">Frango</p>
+                <p class="menu__item-price">R$ 11,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">Picanha</p>
+                <p class="menu__item-price">R$ 20,00</p>
+              </div>
+            </div>
+          </section>
 
-          <h1 class="page-title">Especiais</h1>
-          <div class="burguers">
-            <p class="burguer-nome">Vegano</p>
-            <p class="preco">R$12,00</p>
-            <p class="burguer-nome">Duplo Bacon</p>
-            <p class="preco">R$20,00</p>
-            <p class="burguer-nome">Duplo Salada</p>
-            <p class="preco">R$18,00</p>
-            <p class="burguer-nome">Duplo Picanha</p>
-            <p class="preco">R$30,00</p>
-          </div>
+          <section class="menu__section">
+            <h1 class="menu__section-title">Especiais</h1>
+            <div class="menu__items">
+              <div class="menu__item">
+                <p class="menu__item-name">Vegano</p>
+                <p class="menu__item-price">R$ 12,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">Duplo Bacon</p>
+                <p class="menu__item-price">R$ 20,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">Duplo Salada</p>
+                <p class="menu__item-price">R$ 18,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">Duplo Picanha</p>
+                <p class="menu__item-price">R$ 30,00</p>
+              </div>
+            </div>
+          </section>
 
-          <h1 class="page-title">Bebidas</h1>
-          <div class="bebidas">
-            <p class="bebidas-nome">Refrigerante 1L</p>
-            <p class="preco">R$6,00</p>
-            <p class="bebidas-nome">Refrigerante 2L</p>
-            <p class="preco">R$10,00</p>
-            <p class="bebidas-nome">Suco de Laranja Natural 500ml</p>
-            <p class="preco">R$7,00</p>
-            <p class="bebidas-nome">Água (com e sem gás)</p>
-            <p class="preco">R$4,00</p>
-          </div>
-        </div>
+          <section class="menu__section">
+            <h1 class="menu__section-title">Bebidas</h1>
+            <div class="menu__items">
+              <div class="menu__item">
+                <p class="menu__item-name">Refrigerante 1L</p>
+                <p class="menu__item-price">R$ 6,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">Refrigerante 2L</p>
+                <p class="menu__item-price">R$ 10,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">Suco de Laranja 500ml</p>
+                <p class="menu__item-price">R$ 7,00</p>
+              </div>
+              <div class="menu__item">
+                <p class="menu__item-name">Água (com e sem gás)</p>
+                <p class="menu__item-price">R$ 4,00</p>
+              </div>
+            </div>
+          </section>
+        </section>
 
-        <div class="grid-imgs">
+        <section class="burguer-images">
           <img
-            class="imagem"
+            class="burguer-img"
             src="https://www.sabornamesa.com.br/media/k2/items/cache/b9ad772005653afce4d4bd46c2efe842_XL.jpg"
             alt=""
           />
           <img
-            class="imagem"
+            class="burguer-img"
             src="https://assets.unileversolutions.com/recipes-v2/230446.jpg"
             alt=""
           />
           <img
-            class="imagem"
+            class="burguer-img"
             src="https://static.onecms.io/wp-content/uploads/sites/24/2020/01/22/gma_sl_1624-2000.jpg"
             alt=""
           />
-        </div>
-      </div>
-
-      <footer>
-        <section class="socials">
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.facebook.com/" target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://web.telegram.org/z/" target="_blank"
-            ><i class="fa-brands fa-telegram"></i
-          ></a>
+          <img
+            class="burguer-img"
+            src="https://www.lepingue.com.br/admin/uploads/images/galeria/duplo-bacon_ca3908e0d94d46afac3781d82ce01f0a__800x600__0x0.jpg"
+            alt=""
+          />
         </section>
-        <img class="logo footer-logo" src="img/logo.png" alt="" />
-      </footer>
+      </div>
     </main>
+
+    <footer>
+      <section class="socials">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://web.telegram.org/z/" target="_blank"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </section>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/oliveirasarah" target="_blank"
+          >Sarah Oliveira</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
