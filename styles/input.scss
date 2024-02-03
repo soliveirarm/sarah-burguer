@@ -1,6 +1,7 @@
 // Variables
 $light: #fcfcfc;
 $accent: #ef6069;
+$secondary: #fdbf00;
 $dark: #574141;
 $font-title: "Agbalumo", system-ui;
 $font-sans: "Inter", sans-serif;
@@ -99,7 +100,7 @@ header {
     padding: 1rem;
     color: $light;
     background-color: $accent;
-    border-bottom: darken($accent, 30%) 2px solid;
+    border-bottom: $secondary 4px solid;
     border-radius: 10px;
     margin-bottom: 1rem;
   }
@@ -141,16 +142,18 @@ header {
 }
 
 a {
+  text-decoration: none;
   color: $light;
   transition: 0.3s ease;
 
   &:hover {
-    color: #ddd;
+    text-decoration: underline;
+    color: lighten($secondary, 20%);
   }
 }
 
 .fa-brands {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .fa-solid {

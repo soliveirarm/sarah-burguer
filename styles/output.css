@@ -79,7 +79,7 @@ header .icons i {
   padding: 1rem;
   color: #fcfcfc;
   background-color: #ef6069;
-  border-bottom: #a5111a 2px solid;
+  border-bottom: #fdbf00 4px solid;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -110,21 +110,22 @@ header .icons i {
   max-height: 400px;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   justify-items: center;
 }
 
 a {
+  text-decoration: none;
   color: #fcfcfc;
   transition: 0.3s ease;
 }
 a:hover {
-  color: #ddd;
+  text-decoration: underline;
+  color: #ffd964;
 }
 
 .fa-brands {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .fa-solid {
@@ -190,4 +191,6 @@ footer {
   .burguer-images {
     grid-template-columns: repeat(2, 1fr);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=output.css.map */
